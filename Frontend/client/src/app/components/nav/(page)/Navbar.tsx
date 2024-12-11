@@ -24,8 +24,8 @@ import { Box, Drawer, IconButton, Typography } from "@mui/material";
 
 const Navbar = () => {
 
-    const [isAtTop, setIsAtTop] = useState(true);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isAtTop, setIsAtTop] = useState<boolean>(true);
+    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
     const handleScroll = () => {
         const scrollPosition = window.scrollY;

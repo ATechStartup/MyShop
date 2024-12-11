@@ -211,7 +211,7 @@ const Products = () => {
                                         width: "10rem",
                                         height: "2.5rem",
                                         '& .MuiOutlinedInput-notchedOutline': {
-                                            borderColor: "#c9c9c9", // Outline border color
+                                            borderColor: "#cbd5e1", // Outline border color
                                         }
                                     }}
                                 >
@@ -233,7 +233,7 @@ const Products = () => {
 
                     </Box>
 
-                    <Box component="div">
+                    {/* <Box component="div">
                         <Stack spacing={2} sx={{ direction: 'ltr' }}>
                             <Pagination
                                 count={Math.ceil(filteredProducts.length / itemsPerPage)}
@@ -255,7 +255,37 @@ const Products = () => {
                                 }}
                             />
                         </Stack>
+                    </Box> */}
+
+
+                    <Box component="div">
+                        <Stack spacing={2} sx={{ direction: 'ltr' }}>
+                            <Pagination
+                                count={Math.ceil(filteredProducts.length / itemsPerPage)}
+                                page={currentPage}
+                                onChange={handlePageChange}
+                                color="primary"
+                                sx={{
+                                    "& .MuiPagination-ul": {
+                                        justifyContent: "center", // Default center alignment for pagination
+                                    },
+                                    "& .Mui-selected": {
+                                        backgroundColor: "#4caf50", // Customize selected item color
+                                        color: "#ffffff", // Change text color for selected item
+                                    },
+                                    "& .MuiPaginationItem-root": {
+                                        borderRadius: "50%", // Custom item shape (round)
+                                        backgroundColor: "#ededed", // Background color for items
+                                        color: "#000000", // Default text color for items
+                                        "&:hover": {
+                                            backgroundColor: "#d3d3d3", // Change background on hover
+                                        },
+                                    }
+                                }}
+                            />
+                        </Stack>
                     </Box>
+
 
                 </Box>
 
@@ -282,16 +312,28 @@ const Products = () => {
                             count={Math.ceil(filteredProducts.length / itemsPerPage)}
                             page={currentPage}
                             onChange={handlePageChange}
-                            variant="outlined"
                             color="primary"
                             sx={{
                                 "& .MuiPagination-ul": {
-                                    justifyContent: "center",
+                                    justifyContent: "center", // Default center alignment for pagination
                                 },
+                                "& .Mui-selected": {
+                                    backgroundColor: "#4caf50", // Customize selected item color
+                                    color: "#ffffff", // Change text color for selected item
+                                },
+                                "& .MuiPaginationItem-root": {
+                                    borderRadius: "50%", // Custom item shape (round)
+                                    backgroundColor: "#ededed", // Background color for items
+                                    color: "#000000", // Default text color for items
+                                    "&:hover": {
+                                        backgroundColor: "#d3d3d3", // Change background on hover
+                                    },
+                                }
                             }}
                         />
                     </Stack>
                 </Box>
+
 
             </Box>
 

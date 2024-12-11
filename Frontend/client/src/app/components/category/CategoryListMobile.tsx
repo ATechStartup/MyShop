@@ -184,15 +184,15 @@ const CategoryListMobile: React.FC<CategoryListMobileProps> = ({ toggleMenu }) =
                     >
 
                         <Link href={'#'}>
-                            <FaInstagram size={30} />
+                            <FaInstagram size={30} className="text-slate-600" />
                         </Link>
 
                         <Link href={'#'}>
-                            <SiTelegram size={30} />
+                            <SiTelegram size={30} className="text-slate-600" />
                         </Link>
 
                         <Link href={'#'}>
-                            <IoLogoWhatsapp size={32} />
+                            <IoLogoWhatsapp size={32} className="text-slate-600" />
                         </Link>
 
                     </Box>

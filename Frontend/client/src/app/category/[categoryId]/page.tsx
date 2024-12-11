@@ -260,20 +260,34 @@ const CategoryPage = () => {
                                 mt: '2.5rem'
                             }}
                         >
-                            <Stack spacing={2} sx={{ direction: 'ltr' }}>
-                                <Pagination
-                                    count={Math.ceil(filteredProducts.length / itemsPerPage)}
-                                    page={currentPage}
-                                    onChange={handlePageChange}
-                                    variant="outlined"
-                                    color="primary"
-                                    sx={{
-                                        "& .MuiPagination-ul": {
-                                            justifyContent: "start", // Center the pagination
-                                        },
-                                    }}
-                                />
-                            </Stack>
+                            <Box component="div">
+                                <Stack spacing={2} sx={{ direction: 'ltr' }}>
+                                    <Pagination
+                                        count={Math.ceil(filteredProducts.length / itemsPerPage)}
+                                        page={currentPage}
+                                        onChange={handlePageChange}
+                                        color="primary"
+                                        sx={{
+                                            "& .MuiPagination-ul": {
+                                                justifyContent: "center", // Default center alignment for pagination
+                                            },
+                                            "& .Mui-selected": {
+                                                backgroundColor: "#4caf50", // Customize selected item color
+                                                color: "#ffffff", // Change text color for selected item
+                                            },
+                                            "& .MuiPaginationItem-root": {
+                                                borderRadius: "50%", // Custom item shape (round)
+                                                backgroundColor: "#ededed", // Background color for items
+                                                color: "#000000", // Default text color for items
+                                                "&:hover": {
+                                                    backgroundColor: "#d3d3d3", // Change background on hover
+                                                },
+                                            }
+                                        }}
+                                    />
+                                </Stack>
+                            </Box>
+
                         </Box>
 
                     </Box>
@@ -301,16 +315,28 @@ const CategoryPage = () => {
                                 count={Math.ceil(filteredProducts.length / itemsPerPage)}
                                 page={currentPage}
                                 onChange={handlePageChange}
-                                variant="outlined"
                                 color="primary"
                                 sx={{
                                     "& .MuiPagination-ul": {
-                                        justifyContent: "center", // Center the pagination
+                                        justifyContent: "center", // Default center alignment for pagination
                                     },
+                                    "& .Mui-selected": {
+                                        backgroundColor: "#4caf50", // Customize selected item color
+                                        color: "#ffffff", // Change text color for selected item
+                                    },
+                                    "& .MuiPaginationItem-root": {
+                                        borderRadius: "50%", // Custom item shape (round)
+                                        backgroundColor: "#ededed", // Background color for items
+                                        color: "#000000", // Default text color for items
+                                        "&:hover": {
+                                            backgroundColor: "#d3d3d3", // Change background on hover
+                                        },
+                                    }
                                 }}
                             />
                         </Stack>
                     </Box>
+
 
                 </Box>
             </Container>
