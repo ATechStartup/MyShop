@@ -141,24 +141,30 @@ const ProductForm = ({
 
 
     const handleUpload = async (event) => {
-        setIsLoading(true);
-        const files = event.target.files;
-        const urls = [];
-
-        for (const file of files) {
-            try {
-                const url = await uploadFile(file);
-                urls.push(url);
-            } catch (error) {
-                console.error('Error uploading file:', error);
-            }
+        const files = Array.from(event.target.files);
+        const formData = new FormData();
+    
+        files.forEach(file => {
+            formData.append('images', file);
+        });
+    
+        try {
+            setIsLoading(true);
+            const { data } = await axios.post('http://localhost:5000/api/upload', formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            });
+            setUploadedUrls([...uploadedUrls, ...data.urls]); // Append the new URLs
+            setImages([...images, ...data.urls]); // Update the images array
+            setIsLoading(false);
+        } catch (error) {
+            console.error('Error uploading images:', error);
+            toast.error('Error uploading images');
+            setIsLoading(false);
         }
-
-        // Append new URLs to both images and uploadedUrls states
-        setUploadedUrls([...uploadedUrls, ...urls]);
-        setImages([...images, ...urls]);
-        setIsLoading(false);
     };
+    
 
 
     const handleDeleteImage = (url) => {

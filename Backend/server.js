@@ -23,6 +23,7 @@ const productRoutes = require('./routes/products');
 const searchRoutes = require('./routes/search');
 const wishlistRoutes = require('./routes/wishlist');
 const commentRoutes = require('./routes/comment');
+const uploadRoutes = require('./routes/upload');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/categories', categoryRoutes);
@@ -30,6 +31,7 @@ app.use('/api/products', productRoutes);
 app.use('/api', searchRoutes);
 app.use('/api', wishlistRoutes);
 app.use('/api', commentRoutes);
+app.use('/api/upload', uploadRoutes);
 
 // Root route for testing
 app.get('/', (req, res) => {
