@@ -1,7 +1,7 @@
 
 const OrderPage = () => {
     return (
-        <div>OrderPage</div>
+        <div>سفارشی ثبت نشده</div>
     )
 }
 

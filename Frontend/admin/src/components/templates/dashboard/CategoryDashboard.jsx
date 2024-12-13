@@ -59,10 +59,10 @@ const CategoryDashboard = () => {
                         const parentCategory = data.find(cat => cat._id === category.parent);
                         return (
                             <TableRow key={category._id}>
-                                <TableCell sx={{ fontFamily: 'Vazir' }}>
+                                <TableCell sx={{ fontFamily: 'Vazir', fontWeight: 700 }}>
                                     {category.name}
                                 </TableCell>
-                                <TableCell sx={{ fontFamily: 'Vazir' }}>
+                                <TableCell sx={{ fontFamily: 'Vazir', fontWeight: 700 }}>
                                     {parentCategory ? parentCategory.name : '_'}
                                 </TableCell>
                             </TableRow>
@@ -84,6 +84,7 @@ const CategoryDashboard = () => {
                 sx={{
                     "& .MuiTablePagination-toolbar": {
                         fontFamily: 'Vazir', // Apply custom font to toolbar
+                        fontWeight: 700
                     },
                     "& .MuiTablePagination-selectLabel": {
                         fontFamily: 'Vazir', // Apply custom font to select label
@@ -91,6 +92,7 @@ const CategoryDashboard = () => {
                     },
                     "& .MuiTablePagination-displayedRows": {
                         fontFamily: 'Vazir', // Apply custom font to displayed rows text
+                        fontWeight: 700
                     }
                 }}
             />

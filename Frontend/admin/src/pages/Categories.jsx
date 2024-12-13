@@ -203,10 +203,10 @@ const CategoryPage = ({ swal }) => {
                                         key={category._id}
                                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                     >
-                                        <TableCell component="th" scope="row" sx={{ fontFamily: 'Vazir' }}>
+                                        <TableCell component="th" scope="row" sx={{ fontFamily: 'Vazir', fontWeight: 700 }}>
                                             {category.name}
                                         </TableCell>
-                                        <TableCell sx={{ fontFamily: 'Vazir' }}>
+                                        <TableCell sx={{ fontFamily: 'Vazir', fontWeight: 700 }}>
                                             {parentCategory ? parentCategory.name : '_'}
                                         </TableCell>
                                         <TableCell>
@@ -227,7 +227,7 @@ const CategoryPage = ({ swal }) => {
                                                 >
                                                     <IconButton onClick={() => editCategory(category)}>
                                                         <MdOutlineEditNote size={24} />
-                                                        <Typography sx={{ fontFamily: 'Vazir', fontSize: '0.8rem' }}>ویرایش</Typography>
+                                                        <Typography sx={{ fontFamily: 'Vazir', fontSize: '0.8rem', fontWeight: 700 }}>ویرایش</Typography>
                                                     </IconButton>
                                                 </Tooltip>
 
@@ -247,7 +247,7 @@ const CategoryPage = ({ swal }) => {
                                                 >
                                                     <IconButton onClick={() => handleDeleteCategory(category)}>
                                                         <MdDeleteOutline size={24} />
-                                                        <Typography sx={{ fontFamily: 'Vazir', fontSize: '0.8rem' }}>حذف</Typography>
+                                                        <Typography sx={{ fontFamily: 'Vazir', fontSize: '0.8rem', fontWeight: 700 }}>حذف</Typography>
                                                     </IconButton>
                                                 </Tooltip>
                                             </Box>
@@ -271,13 +271,15 @@ const CategoryPage = ({ swal }) => {
                         sx={{
                             "& .MuiTablePagination-toolbar": {
                                 fontFamily: 'Vazir', // Apply custom font to toolbar
+                                fontWeight: 700
                             },
                             "& .MuiTablePagination-selectLabel": {
                                 fontFamily: 'Vazir', // Apply custom font to select label
-                                fontWeight: 'bold'  // Apply bold font weight to select label
+                                fontWeight: 700  // Apply bold font weight to select label
                             },
                             "& .MuiTablePagination-displayedRows": {
                                 fontFamily: 'Vazir', // Apply custom font to displayed rows text
+                                fontWeight: 700
                             }
                         }}
                     />

@@ -67,11 +67,11 @@ const ProductDashboard = () => {
                                 key={product._id}
                                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                             >
-                                <TableCell component="th" scope="row" sx={{ fontFamily: 'Vazir' }}>
+                                <TableCell component="th" scope="row" sx={{ fontFamily: 'Vazir', fontWeight: 700 }}>
                                     {product.title}
                                 </TableCell>
-                                <TableCell align="right" sx={{ fontFamily: 'Vazir' }}>{offerPrice}</TableCell>
-                                <TableCell align="right" sx={{ fontFamily: 'Vazir' }}>{product.category.name}</TableCell>
+                                <TableCell align="right" sx={{ fontFamily: 'Vazir', fontWeight: 700 }}>{offerPrice}</TableCell>
+                                <TableCell align="right" sx={{ fontFamily: 'Vazir', fontWeight: 700 }}>{product.category.name}</TableCell>
                             </TableRow>
                         )
                     })}
@@ -91,13 +91,15 @@ const ProductDashboard = () => {
                 sx={{
                     "& .MuiTablePagination-toolbar": {
                         fontFamily: 'Vazir', // Apply custom font to toolbar
+                        fontWeight: 700
                     },
                     "& .MuiTablePagination-selectLabel": {
                         fontFamily: 'Vazir', // Apply custom font to select label
-                        fontWeight: 'bold'  // Apply bold font weight to select label
+                        fontWeight: 700  // Apply bold font weight to select label
                     },
                     "& .MuiTablePagination-displayedRows": {
                         fontFamily: 'Vazir', // Apply custom font to displayed rows text
+                        fontWeight: 700
                     }
                 }}
             />

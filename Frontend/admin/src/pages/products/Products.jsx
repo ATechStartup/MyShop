@@ -105,31 +105,31 @@ const ProductPage = () => {
                                     key={product._id}
                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                 >
-                                    <TableCell component="th" scope="row" sx={{ fontFamily: 'Vazir' }}>
+                                    <TableCell component="th" scope="row" sx={{ fontFamily: 'Vazir', fontWeight: 700 }}>
                                         {product.title}
                                     </TableCell>
-                                    <TableCell sx={{ fontFamily: 'Vazir' }}>{offerPrice}</TableCell>
-                                    <TableCell sx={{ fontFamily: 'Vazir' }}>{product.category ? product.category.name : "حذف شده"}</TableCell>
+                                    <TableCell sx={{ fontFamily: 'Vazir', fontWeight: 700 }}>{offerPrice}</TableCell>
+                                    <TableCell sx={{ fontFamily: 'Vazir', fontWeight: 700 }}>{product.category ? product.category.name : "حذف شده"}</TableCell>
                                     <TableCell>
                                         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem' }}>
                                             <Tooltip title="حذف" sx={{ fontFamily: 'Vazir' }}>
                                                 <Link to={`/products/delete/${product._id}?page=${page}&rowsPerPage=${rowsPerPage}`} className="flex items-center gap-1 btn-default">
                                                     <MdDeleteOutline size={24} />
-                                                    <Typography sx={{ fontFamily: 'Vazir', fontSize: '0.8rem' }}>حذف</Typography>
+                                                    <Typography sx={{ fontFamily: 'Vazir', fontSize: '0.8rem', fontWeight: 700 }}>حذف</Typography>
                                                 </Link>
                                             </Tooltip>
 
                                             <Tooltip title="ویرایش" sx={{ fontFamily: 'Vazir' }}>
                                                 <Link to={'/products/edit/' + product._id} className="flex items-center gap-1 btn-default">
                                                     <MdOutlineEditNote size={24} />
-                                                    <Typography sx={{ fontFamily: 'Vazir', fontSize: '0.8rem' }}>ویرایش</Typography>
+                                                    <Typography sx={{ fontFamily: 'Vazir', fontSize: '0.8rem', fontWeight: 700 }}>ویرایش</Typography>
                                                 </Link>
                                             </Tooltip>
 
                                             <Tooltip title="نمایش" sx={{ fontFamily: 'Vazir' }}>
                                                 <Link to={'/products/view/' + product._id} className="flex items-center gap-1 btn-default">
                                                     <RemoveRedEyeOutlinedIcon sx={{ width: '1.7rem' }} />
-                                                    <Typography sx={{ fontFamily: 'Vazir', fontSize: '0.8rem' }}>نمایش</Typography>
+                                                    <Typography sx={{ fontFamily: 'Vazir', fontSize: '0.8rem', fontWeight: 700 }}>نمایش</Typography>
                                                 </Link>
                                             </Tooltip>
                                         </Box>
@@ -153,13 +153,15 @@ const ProductPage = () => {
                     sx={{
                         "& .MuiTablePagination-toolbar": {
                             fontFamily: 'Vazir', // Apply custom font to toolbar
+                            fontWeight: 700
                         },
                         "& .MuiTablePagination-selectLabel": {
                             fontFamily: 'Vazir', // Apply custom font to select label
-                            fontWeight: 'bold'  // Apply bold font weight to select label
+                            fontWeight: 700  // Apply bold font weight to select label
                         },
                         "& .MuiTablePagination-displayedRows": {
                             fontFamily: 'Vazir', // Apply custom font to displayed rows text
+                            fontWeight: 700
                         }
                     }}
                 />

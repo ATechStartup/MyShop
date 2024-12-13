@@ -5,19 +5,19 @@
 
 @font-face {
     font-family: 'Vazir';
-    src: url('./assets/fonts/Vazirmatn-Thin.ttf') format('ttf'),
-        url('./assets/fonts/Vazirmatn-Regular.ttf') format('ttf'),
-        url('./assets/fonts/Vazirmatn-Medium.ttf') format('ttf'),
-        url('./assets/fonts/Vazirmatn-ExtraBold.ttf') format('ttf'),
-        url('./assets/fonts/Vazirmatn-Bold.ttf') format('ttf');
+    src: url('./assets/fonts/Vazirmatn-Thin.ttf') format('truetype'),
+        url('./assets/fonts/Vazirmatn-Regular.ttf') format('truetype'),
+        url('./assets/fonts/Vazirmatn-Medium.ttf') format('truetype'),
+        url('./assets/fonts/Vazirmatn-ExtraBold.ttf') format('truetype'),
+        url('./assets/fonts/Vazirmatn-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 
 :root {
-    font-family: Vazir, sans-serif !important;
-    font-weight: normal;
+    font-family: "Vazir", sans-serif !important;
+    font-weight: 700;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
