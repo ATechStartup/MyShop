@@ -297,9 +297,9 @@ const ProductForm = ({
                         value={category}
                         onChange={ev => setCategory(ev.target.value)}
                     >
-                        <option value=''>انتخاب کنید</option>
+                        <option value='' style={{ fontWeight: 700 }}>انتخاب کنید</option>
                         {categories.length > 0 && categories.map(c => (
-                            <option key={c._id} value={c._id}>{c.name}</option>
+                            <option key={c._id} value={c._id} style={{ fontWeight: 700 }}>{c.name}</option>
                         ))}
                     </select>
                 </div>
@@ -316,9 +316,9 @@ const ProductForm = ({
                         value={gender}
                         onChange={ev => setGender(ev.target.value)}
                     >
-                        <option value=''>انتخاب کنید</option>
-                        <option value='men'>مردانه</option>
-                        <option value='women'>زنانه</option>
+                        <option value='' style={{ fontWeight: 700 }}>انتخاب کنید</option>
+                        <option value='men' style={{ fontWeight: 700 }}>مردانه</option>
+                        <option value='women' style={{ fontWeight: 700 }}>زنانه</option>
                     </select>
 
                     {gender && (
@@ -381,7 +381,7 @@ const ProductForm = ({
 
                     <label className="w-[8rem] h-[8rem] flex flex-col items-center justify-center gap-2 cursor-pointer text-gray-600 rounded-lg bg-white shadow-sm border border-gray-200">
                         <IoCloudUploadOutline size={33} />
-                        <div className="text-[1rem] font-[500]">Upload</div>
+                        <div className="text-[1rem] font-[500]" style={{ fontWeight: 700 }}>Upload</div>
                         <input type="file" name="images" id="images" className="hidden" onChange={handleUpload} multiple />
                     </label>
                 </div>
