@@ -18,8 +18,6 @@ interface SetQtyProps {
     custom?: React.CSSProperties;
 }
 
-const btnStyles = "";
-
 
 const SetQuantity: React.FC<SetQtyProps> = ({
     cardCounter,

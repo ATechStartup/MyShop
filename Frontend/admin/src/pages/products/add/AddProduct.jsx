@@ -7,7 +7,7 @@ const AddProductPage = () => {
         <div className="s:pb-20 pt-3">
 
             <div className="flex items-center justify-between pb-4">
-                <h1 className="font-[400] text-[1.4rem] relative top-2">ایجاد محصول</h1>
+                <h1 className="font-[900] text-[1.4rem] relative top-2">ایجاد محصول</h1>
                 <Link to={'/products'}>
                     <div
                         className="w-10 h-10 border-[1px] border-slate-200 flex items-center justify-center rounded-full bg-slate-200 shadow-md"

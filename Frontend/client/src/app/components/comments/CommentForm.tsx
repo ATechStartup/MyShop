@@ -161,6 +161,7 @@ const CommentForm: React.FC<CommentFormProps> = ({ productId, onCommentAdded }) 
                                 gap: '0.5rem',
                                 transition: 'all 0.3s',
                                 opacity: '0.9',
+                                ":disabled": { opacity: "0.5" },
                                 '&:hover': {
                                     opacity: '1',
                                     background: '#334155',

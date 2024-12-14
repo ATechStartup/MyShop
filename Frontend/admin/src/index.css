@@ -100,3 +100,10 @@ table.basic a {
 .btn-default {
     @apply bg-gray-600 text-white px-4 py-1;
 }
+
+
+#swal2-html-container,
+.swal2-confirm,
+.swal2-cancel {
+    font-weight: 700;
+}

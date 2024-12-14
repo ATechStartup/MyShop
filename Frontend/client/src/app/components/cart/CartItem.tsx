@@ -118,7 +118,7 @@ const CartItem: React.FC<ItemContentProps> = ({ item }) => {
                 </Box>
             </Box>
             {item?.offer ? (
-                <Box component={'div'} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.1rem' }}>
+                <Box component={'div'} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.1rem' }} style={{ flexDirection: 'column' }}>
                     <Typography variant="body2" sx={{ justifySelf: 'center' }}>
                         {formatPriceToFarsi(item?.offer)}
                     </Typography>
@@ -128,7 +128,7 @@ const CartItem: React.FC<ItemContentProps> = ({ item }) => {
                     </Typography>
                 </Box>
             ) : (
-                <Box component={'div'} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.1rem' }}>
+                <Box component={'div'} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.1rem', }} style={{ flexDirection: 'column' }}>
                     <Typography variant="body2" sx={{ justifySelf: 'center' }}>
                         {formatPriceToFarsi(item?.price)}
                     </Typography>

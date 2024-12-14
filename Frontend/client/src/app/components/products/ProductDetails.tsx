@@ -72,7 +72,7 @@ const ProductDetails: React.FC = () => {
         skip: !productId, // Skip query if no productId
     });
 
-    const [addToWishlist, { isLoading: isAddingToWishlist }] = useAddToWishlistMutation();
+    const [addToWishlist] = useAddToWishlistMutation();
 
 
     useEffect(() => {
