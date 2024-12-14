@@ -151,9 +151,9 @@ const CategoryPage = ({ swal }) => {
                             value={parent}
                             onChange={(e) => setParent(e.target.value)}
                         >
-                            <option value="">هیچ دسته بندی انتخاب نشده</option>
+                            <option value="" style={{ fontWeight: 700 }}>هیچ دسته بندی انتخاب نشده</option>
                             {categories.map(category => (
-                                <option key={category._id} value={category._id}>
+                                <option key={category._id} value={category._id} style={{ fontWeight: 700 }}>
                                     {category.name}
                                 </option>
                             ))}
