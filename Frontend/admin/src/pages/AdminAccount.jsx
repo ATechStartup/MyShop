@@ -145,7 +145,7 @@ const AdminAccount = () => {
 
     return (
         <div className="w-full xs:pb-16">
-            <h1 className="font-[400] text-[1.4rem]">حساب کاربری</h1>
+            <h1 className="font-[700] text-[1.4rem]">حساب کاربری</h1>
             <div className="pt-5 w-full">
                 <form onSubmit={handleSubmit} className="w-full">
                     <div className="flex flex-col justify-between">

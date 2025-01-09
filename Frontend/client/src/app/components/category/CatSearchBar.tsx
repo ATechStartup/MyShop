@@ -13,7 +13,7 @@ import { CiSearch } from "react-icons/ci";
 import SearchBarItem from "../nav/SearchBar/SearchBarItem";
 
 // ** MUI
-import { Box, Divider } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 
 
 interface CategoryListMobileProps {
@@ -98,7 +98,7 @@ const CatSearchBar: React.FC<CategoryListMobileProps> = ({ toggleMenu }) => {
                         py: '1rem',
                         outline: 'none',
                         color: '#000000',
-                        fontWeight: '700',
+                        fontWeight: 700,
                     }}
 
                 />
@@ -107,6 +107,7 @@ const CatSearchBar: React.FC<CategoryListMobileProps> = ({ toggleMenu }) => {
             {noResults && (
                 <Box
                     component="div"
+                    fontWeight={700}
                     sx={{
                         position: 'absolute',
                         zIndex: 10,
@@ -117,10 +118,13 @@ const CatSearchBar: React.FC<CategoryListMobileProps> = ({ toggleMenu }) => {
                         mt: '0.25rem',
                         maxWidth: '24rem',
                         width: '100%',
-                        p: '0.5rem'
+                        p: '0.5rem',
+                        fontWeight: 700
                     }}
                 >
+                    <Typography fontWeight={700}>
                     هیچ محصولی یافت نشد
+                    </Typography>
                 </Box>
             )}
             {showResults && results.length > 0 && (

@@ -125,7 +125,7 @@ const CategoryPage = ({ swal }) => {
 
     return (
         <div className="s:pb-24">
-            <h1 className="font-[400] text-[1.4rem]">دسته بندی ها</h1>
+            <h1 className="font-[700] text-[1.4rem]">دسته بندی ها</h1>
             <label>
                 {editedCategory
                     ? `ویرایش دسته بندی ${editedCategory.name}`

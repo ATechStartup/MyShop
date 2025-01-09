@@ -49,7 +49,7 @@ const ProductView = () => {
 
                     <div className="flex justify-between items-center pb-3">
 
-                        <h1 className="font-[400] text-[1.4rem] relative top-2">مشخصات محصول</h1>
+                        <h1 className="font-[700] text-[1.4rem] relative top-2">مشخصات محصول</h1>
 
                         <Link to={'/products'}>
                             <div

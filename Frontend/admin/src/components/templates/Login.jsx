@@ -155,11 +155,11 @@ const Login = () => {
 
                     <div className='flex items-center justify-between gap-1 mt-5 2xs:gap-2'>
                         <div className='text-sm text-center mt-2 2xs:leading-7'>
-                            حساب کاربری ندارید؟ <Link to={'/register'} className='text-rose-500'>ثبت نام کنید</Link>
+                            حساب کاربری ندارید؟ <br /> <Link to={'/register'} className='text-rose-500'>ثبت نام کنید</Link>
                         </div>
 
                         <div className='text-sm text-center mt-2 2xs:leading-7'>
-                            <Link to={'/reset-account'}>رمز عبور خود را فراموش کردید؟</Link>
+                            <Link to={'/reset-account'}>رمز عبور خود را<br /> فراموش کردید؟</Link>
                         </div>
                     </div>
 

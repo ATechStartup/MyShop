@@ -233,13 +233,16 @@ const WishlistProduct: React.FC<WishlistProductProps> = ({ product, userId, onRe
             <Box
                 component="div"
                 sx={{
-                    background: '#475569'
+                    background: '#475569',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
                 }}
             >
                 <Button
                     label="حذف"
-                    icon={MdDeleteOutline}
-                    custom="!py-1 !text-[0.9rem] !gap-1"
+                    // icon={MdDeleteOutline}
+                    custom="!py-1 !text-[0.9rem] !gap-1 !text-center"
                     onClick={() => onRemove(product._id)}
                 />
             </Box>

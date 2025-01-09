@@ -75,7 +75,7 @@ const SearchBar = () => {
                 width: '100%'
             }}
         >
-            <Box component="div" sx={{ width: '100%' }}>
+            <Box component="div" sx={{ width: '100%', fontWeight: 700 }}>
                 <Box
                     component="input"
                     type="search"
@@ -98,7 +98,7 @@ const SearchBar = () => {
                 />
             </Box>
             {noResults && (
-                <Typography variant="body1" sx={{
+                <Typography fontWeight={700} sx={{
                     position: 'absolute',
                     zIndex: 10,
                     background: '#fcfcfc',
@@ -108,7 +108,7 @@ const SearchBar = () => {
                     mt: '0.20rem',
                     maxWidth: '24rem',
                     width: '100%',
-                    p: '0.5rem'
+                    p: '0.5rem',
                 }}
                 >
                     هیچ محصولی یافت نشد
